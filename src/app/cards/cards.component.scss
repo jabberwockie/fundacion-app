@@ -1,0 +1,17 @@
+@import "../variables";
+
+.flex-container {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  li {
+    margin: 20px 0;
+  }
+}
+
+app-cards {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
