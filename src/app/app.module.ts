@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import { CarouselComponent } from './carousel/carousel.component';
+import { CardsComponent } from './cards/cards.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CarouselComponent
+    CarouselComponent,
+    CardsComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
