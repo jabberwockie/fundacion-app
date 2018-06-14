@@ -1,2 +1,9 @@
+.image {
+  min-width: 100%; }
+  .image img {
+    min-width: 100%; }
+
+ngb-carousel {
+  width: 100%; }
 
 /*# sourceMappingURL=carousel.component.css.map */
