@@ -10,6 +10,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CardsComponent } from './cards/cards.component';
 import { CardComponent } from './card/card.component';
 import { AccordionComponent } from './accordion/accordion.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AccordionComponent } from './accordion/accordion.component';
     CarouselComponent,
     CardsComponent,
     CardComponent,
-    AccordionComponent
+    AccordionComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

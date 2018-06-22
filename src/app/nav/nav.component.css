@@ -1,0 +1,17 @@
+nav {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex: border-box;
+  flex: border-box;
+  line-height: 0; }
+  nav .email {
+    line-height: 0; }
+  nav p {
+    color: #A0A0A0; }
+  nav img {
+    max-height: 100px;
+    width: auto; }
