@@ -1,21 +1,32 @@
 @import '../variables';
 
 .nav {
-  display: block;
-  background-color: $yellow;
+  background-color: $background;
+
   .contacto {
-    display: inline-flex;
-    float: end;
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    margin-top: 2%;
   }
-  .email {
+
+  .contacto .email {
     line-height: 0;
+    float: right;
+    margin-top: 3%;
   }
-  .telefono {
+
+  .contacto .telefono {
     line-height: 0;
+    float: right;
+    margin-right: 20px;
+    margin-top: 3%;
   }
+
   p {
     color: #A0A0A0;
   }
+
   img {
     max-height: 100px;
     width: auto;
