@@ -1,7 +1,7 @@
 @import '../variables';
 
 nav {
-  background: $purple;
+  background: $green;
   color: $background !important;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -21,6 +21,19 @@ nav {
     background-color: rgba(0, 0, 0, 0.2);
     margin: 0;
     border-radius: 5px;
+  }
+  .nav-item:nth-child(4n+1):hover{
+    background-color: $pink;
+  }
+
+  .nav-item:nth-child(4n+2):hover{
+    background-color: #3e45ff;
+  }
+  .nav-item:nth-child(4n+3):hover{
+    background-color: $purple;
+  }
+  .nav-item:nth-child(4n+4):hover{
+    background-color: $orange;
   }
 
   .dropdown-toggle {
