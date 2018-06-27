@@ -1,3 +1,17 @@
+@import "../variables";
+
+.carousel-item {
+  transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out, -o-transform .6s ease-in-out;
+}
+.carousel-caption {
+  background: linear-gradient(transparent, $black);
+  width: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 20px;
+}
+
 .image {
   min-width: 100%;
   img {
@@ -7,4 +21,53 @@
 
 ngb-carousel {
   width: 100%;
+}
+
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  6.25% {opacity: 0.063}
+  12.5% {opacity: 0.125}
+  18.75% {opacity: 0.188}
+  25% {opacity: 0.25;}
+  31.25% {opacity: 0.313}
+  37.5% {opacity: 0.375}
+  43.7% {opacity: 0.438}
+  50% {opacity: 0.5;}
+  56.25% {opacity: 0.563}
+  62.5% {opacity: 0.625}
+  68.75% {opacity: 0.688}
+  75% {opacity: 0.75;}
+  81.25% {opacity: 0.813}
+  87.5% {opacity: 0.875}
+  93.75% {opacity: 0.938}
+  100% {opacity: 1;}
+}
+@Keyframes fadeIn {
+  0% {opacity: 0;}
+  6.25% {opacity: 0.063}
+  12.5% {opacity: 0.125}
+  18.75% {opacity: 0.188}
+  25% {opacity: 0.25;}
+  31.25% {opacity: 0.313}
+  37.5% {opacity: 0.375}
+  43.7% {opacity: 0.438}
+  50% {opacity: 0.5;}
+  56.25% {opacity: 0.563}
+  62.5% {opacity: 0.625}
+  68.75% {opacity: 0.688}
+  75% {opacity: 0.75;}
+  81.25% {opacity: 0.813}
+  87.5% {opacity: 0.875}
+  93.75% {opacity: 0.938}
+  100% {opacity: 1;}
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
