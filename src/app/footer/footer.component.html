@@ -3,25 +3,26 @@
     <div class="contenedor">
       <div class="links">
         <ul class="list">
-          <h5>Links</h5>
-          <li><a href="#">Un link</a></li>
-          <li><a href="#">Otro link</a></li>
-          <li><a href="#">Más links</a></li>
+          <h5>{{ titles[0] }}</h5>
+          <li><a href="#">{{links[0]}}</a></li>
+          <li><a href="#">{{links[1]}}</a></li>
+          <li><a href="#">{{links[2]}}</a></li>
         </ul>
       </div>
       <div class="social">
         <ul class="list">
-          <h5>Redes Sociales</h5>
-          <li><i class="fa fa-facebook" aria-hidden="true"></i> <a href="#"> Facebook</a></li>
-          <li><i class="fa fa-twitter" aria-hidden="true"></i> <a href="#"> Twitter</a></li>
+          <h5>{{ titles[1] }}</h5>
+          <li><i class="fa fa-facebook" aria-hidden="true"></i> <a href="{{facebook}}" target="_blank"> Facebook</a>
+          </li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i> <a href="{{twitter}}" target="_blank"> Twitter</a></li>
         </ul>
       </div>
       <div class="contacto">
         <ul class="list">
-          <h5>¡Contáctanos!</h5>
-          <li>+56 9 1234 6587</li>
-          <li>fundacion@fundacion.cl</li>
-          <li>Dirección: Una Dirección #1234</li>
+          <h5>{{ titles[2] }}</h5>
+          <li>{{contacto[0]}}</li>
+          <li>{{contacto[1]}}</li>
+          <li>{{contacto[2]}}</li>
         </ul>
       </div>
       <div class="imagen">

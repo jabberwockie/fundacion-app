@@ -2,7 +2,29 @@
 
 .footer {
   background-color: $orange;
+
   .contenedor {
     display: flex;
+    padding: 15px 0;
+    justify-content: space-evenly;
+    .list {
+      padding-top: 15px;
+      padding-left: 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+
+  li {
+    display: block;
+    list-style: none;
+  }
+
+  img {
+    max-height: 180px;
+    width: auto;
   }
 }

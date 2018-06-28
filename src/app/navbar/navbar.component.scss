@@ -27,7 +27,7 @@ nav {
   }
 
   .nav-item:nth-child(4n+2):hover{
-    background-color: #3e45ff;
+    background-color: $blue;
   }
   .nav-item:nth-child(4n+3):hover{
     background-color: $purple;
