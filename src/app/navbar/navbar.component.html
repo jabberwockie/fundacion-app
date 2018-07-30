@@ -7,25 +7,25 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">{{ inicio }} <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="/">{{ inicio }} <span class="sr-only">(current)</span></a>
       </li>
       <li ngbDropdown class="nav-item dropdown">
         <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" ngbDropdownToggle>
           {{ quien }}
         </div>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" ngbDropdownMenu>
-          <a class="dropdown-item" href="#">{{ nosotros }}</a>
+          <a class="dropdown-item" routerLink="sobre-nosotros">{{ nosotros }}</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">{{ mision }}</a>
+          <a class="dropdown-item" routerLink="mision">{{ mision }}</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">{{ vision }}</a>
+          <a class="dropdown-item" routerLink="vision">{{ vision }}</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">{{ proyecto }}</a>
+        <a class="nav-link" routerLink="nuestro-proyecto">{{ proyecto }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">{{ contacto }}</a>
+        <a class="nav-link" routerLink="contacto">{{ contacto }}</a>
       </li>
     </ul>
   </div>

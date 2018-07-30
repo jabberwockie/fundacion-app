@@ -7,12 +7,30 @@ import {AngularFontAwesomeModule} from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import { CardsComponent } from './cards/cards.component';
-import { CardComponent } from './card/card.component';
-import { AccordionComponent } from './accordion/accordion.component';
+import { CarouselComponent } from './home/carousel/carousel.component';
+import { CardsComponent } from './home/cards/cards.component';
+import { CardComponent } from './home/card/card.component';
+import { AccordionComponent } from './home/accordion/accordion.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import {HomeComponent} from './home/home.component';
+import { SobreNosotrosComponent } from './quienes-somos/sobre-nosotros/sobre-nosotros.component';
+import { MisionComponent } from './quienes-somos/mision/mision.component';
+import { VisionComponent } from './quienes-somos/vision/vision.component';
+import {QuienesSomosComponent} from './quienes-somos/quienes-somos.component';
+import { NuestroProyectoComponent } from './nuestro-proyecto/nuestro-proyecto.component';
+import { ContactoComponent } from './contacto/contacto.component';
+
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'sobre-nosotros', component: SobreNosotrosComponent },
+  { path: 'mision', component: MisionComponent },
+  { path: 'vision', component: VisionComponent },
+  { path: 'nuestro-proyecto', component: NuestroProyectoComponent },
+  { path: 'contacto', component: ContactoComponent }
+
+];
+
 
 @NgModule({
   declarations: [
@@ -23,13 +41,21 @@ import { FooterComponent } from './footer/footer.component';
     CardComponent,
     AccordionComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    SobreNosotrosComponent,
+    MisionComponent,
+    VisionComponent,
+    QuienesSomosComponent,
+    NuestroProyectoComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AngularFontAwesomeModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
