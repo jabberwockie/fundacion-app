@@ -1,0 +1,43 @@
+@import '../variables';
+
+.container {
+  .telefono {
+    flex-basis: 33.3%;
+  }
+
+  div.telefono:before{
+    content: "";
+    padding: 45px;
+    background: #e4235d;
+    position: absolute;
+    border-radius: 80px;
+    color: #F0F0F0;
+    z-index: -1;
+    margin: 25px 21px;
+
+  }
+  .mail {
+    flex-basis: 33.3%;
+  }
+  .direccion {
+    flex-basis: 33.3%;
+  }
+
+  i {
+    font-size: 45px;
+    color: $background;
+  }
+
+  .fa-phone {
+    padding: 50px;
+    color: $background;
+  }
+
+  .fa-envelope {
+    padding: 43px;
+  }
+
+  .fa-map-marker {
+    padding: 43px 53px
+  }
+}
