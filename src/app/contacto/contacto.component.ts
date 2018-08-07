@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactoComponent implements OnInit {
   mail = 'fundacioninclusiontea@gmail.com';
-
+  fono = '+56 9 6540 2598';
+  direccion = 'Una Dirección #123';
 
   constructor() { }
 

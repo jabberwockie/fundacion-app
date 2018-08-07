@@ -1,6 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
 body {
   background-color: #F0F0F0;
   font-family: 'Roboto', sans-serif; }
+  body .titulo {
+    text-align: center;
+    margin: 30px auto 0; }
 
 /*# sourceMappingURL=styles.css.map */

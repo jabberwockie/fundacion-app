@@ -1,6 +1,11 @@
-@import '../variables';
+@import '../_variables.scss';
 
 .container {
+  .cn-titulo {
+    text-align: center;
+    margin: 30px auto 0;
+  }
+
   .telefono {
     flex-basis: 33.3%;
   }
@@ -8,7 +13,19 @@
   div.telefono:before{
     content: "";
     padding: 45px;
-    background: #e4235d;
+    background: $pink;
+    position: absolute;
+    border-radius: 80px;
+    color: #F0F0F0;
+    z-index: -1;
+    margin: 25px 21px;
+
+  }
+
+  div.mail:before {
+    content: "";
+    padding: 45px;
+    background: $blue;
     position: absolute;
     border-radius: 80px;
     color: #F0F0F0;
@@ -18,6 +35,16 @@
   }
   .mail {
     flex-basis: 33.3%;
+  }
+  div.direccion:before {
+    content: "";
+    padding: 45px;
+    background: $purple;
+    position: absolute;
+    border-radius: 80px;
+    color: #F0F0F0;
+    z-index: -1;
+    margin: 25px 21px;
   }
   .direccion {
     flex-basis: 33.3%;

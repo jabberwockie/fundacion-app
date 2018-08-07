@@ -1,6 +1,10 @@
-@import "app/variables";
+@import "app/_variables.scss";
 
 body {
   background-color: $background;
   font-family: 'Roboto', sans-serif;
+  .titulo {
+    text-align: center;
+    margin: 30px auto 0;
+  }
 }

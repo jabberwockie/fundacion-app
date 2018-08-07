@@ -1,7 +1,10 @@
-@import '../variables.scss';
+@import '../_variables.scss';
 
 .footer {
   background-color: $orange;
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
 
   .contenedor {
     display: flex;
