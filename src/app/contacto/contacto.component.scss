@@ -1,13 +1,15 @@
 @import '../_variables.scss';
 
 .container {
+  font-size: 20px;
+
   .cn-titulo {
     text-align: center;
     margin: 30px auto 0;
   }
 
   .telefono {
-    flex-basis: 33.3%;
+    flex-basis: 33.33%;
   }
 
   div.telefono:before{
@@ -34,7 +36,7 @@
 
   }
   .mail {
-    flex-basis: 33.3%;
+    flex-basis: 33.33%;
   }
   div.direccion:before {
     content: "";
@@ -47,7 +49,26 @@
     margin: 25px 21px;
   }
   .direccion {
-    flex-basis: 33.3%;
+    flex-basis: 33.33%;
+  }
+
+  div.signo:before {
+    content: "";
+    padding: 45px;
+    background: $orange;
+    position: absolute;
+    border-radius: 80px;
+    color: #F0F0F0;
+    z-index: -1;
+    margin: 25px 21px;
+  }
+
+  .signo {
+    flex-basis: 15%;
+  }
+
+  .info {
+    font-size: 24px;
   }
 
   i {
@@ -56,15 +77,20 @@
   }
 
   .fa-phone {
-    padding: 50px;
+    padding: 48px 50px;
     color: $background;
   }
 
   .fa-envelope {
-    padding: 43px;
+    padding: 45px 44px;
   }
 
   .fa-map-marker {
-    padding: 43px 53px
+    padding: 45px 53px;
+  }
+
+  .fa-usd {
+    padding: 45px 53px;
+    color: $background;
   }
 }
