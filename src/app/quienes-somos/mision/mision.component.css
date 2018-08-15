@@ -1,0 +1,19 @@
+.container .contenido {
+  margin-top: 50px; }
+
+.container .np-titulo {
+  text-align: center;
+  margin: 0 auto; }
+
+.container hr {
+  margin-bottom: 30px; }
+
+.container .d-flex {
+  margin-bottom: 35px; }
+
+.container p {
+  text-align: justify;
+  margin: auto 10px auto 20px; }
+
+.container img {
+  margin: auto 20px; }
