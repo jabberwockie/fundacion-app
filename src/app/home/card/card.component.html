@@ -1,8 +1,8 @@
-<div class="card">
-  <img class="card-img-top" src="http://via.placeholder.com/350x200" alt="Card image cap">
+<div class="card" *ngFor="let card of cards">
+  <img class="card-img-top" [src]=card.imagen alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">Algún Título</h5>
-    <p class="card-text">Texto importante sobre una noticia o similar</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">{{ card.titulo }}</h5>
+    <p class="card-text">{{ card.texto }}</p>
+    <a href="#" class="btn btn-primary">Leer más</a>
   </div>
 </div>

@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-  images: Array<string> = ['https://picsum.photos/350/200', 'https://picsum.photos/350/200', 'https://picsum.photos/350/3¿200'];
+  cards = [{titulo: 'titulo 1', texto: 'Texto tarjeta 1', imagen:'https://picsum.photos/350/200'},
+    {titulo: 'titulo 2', texto: 'Texto tarjeta 2', imagen:'https://picsum.photos/350/200'},
+    {titulo: 'titulo 3', texto: 'Texto tarjeta 3', imagen:'https://picsum.photos/350/200'}];
 
   constructor() { }
 
