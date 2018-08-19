@@ -15,7 +15,7 @@
   div.telefono:before{
     content: "";
     padding: 45px;
-    background: $pink;
+    background: $blue;
     position: absolute;
     border-radius: 80px;
     color: #F0F0F0;
@@ -27,7 +27,7 @@
   div.mail:before {
     content: "";
     padding: 45px;
-    background: $blue;
+    background: $orange;
     position: absolute;
     border-radius: 80px;
     color: #F0F0F0;
@@ -55,7 +55,7 @@
   div.signo:before {
     content: "";
     padding: 45px;
-    background: $green;
+    background: $pink;
     position: absolute;
     border-radius: 80px;
     color: #F0F0F0;
