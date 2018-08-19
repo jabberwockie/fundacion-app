@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  titles: Array<string> = ['Links', 'Redes Sociales', '¡Contáctanos!'];
+  titles: Array<string> = ['Links de Interés', 'Redes Sociales', '¡Contáctanos!'];
   links: Array<string> = ['Link Uno', 'Link Dos', 'Link 3'];
   contacto: Array<string> = ['+56 9 1234 6548', 'fundacion@fundacion.cl', 'Una Dirección #1234'];
   facebook = 'https://facebook.com';

@@ -1,4 +1,14 @@
+@import '../../variables.scss';
+
 .card {
   margin: auto 10px;
   align-content: space-evenly;
+  .btn {
+    background-color: $blue;
+    color: $background;
+    text-decoration: none;
+  }
+  .btn:hover {
+    background-color: #1495ac;
+  }
 }

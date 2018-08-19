@@ -20,7 +20,7 @@ nav {
   .nav-item:hover {
     background-color: rgba(0, 0, 0, 0.2);
     margin: 0;
-    border-radius: 5px;
+   // border-radius: 5px;
   }
   .nav-item:nth-child(4n+1):hover{
     background-color: $pink;
