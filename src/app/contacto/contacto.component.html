@@ -1,9 +1,9 @@
 <div class="row contacto">
   <div class="container">
-    <h1 class="titulo">¡Contáctanos!</h1>
+    <h1 class="titulo">{{ titulo }}</h1>
     <hr>
 
-    <div class="d-flex">
+    <div class="iconos">
       <div class="telefono">
         <i class="fa fa-phone"></i>
         <p>{{ fono }}</p>
@@ -21,20 +21,23 @@
   </div>
 </div>
 
-<div class="row col-md-12 deposito">
+<div class="row deposito">
   <div class="container">
     <h1 class="titulo">{{sub_titulo }}</h1>
     <hr>
-    <div class="d-flex">
+    <div class="d-inline-block">
       <div class="intro">
         <p>{{ intro }}</p>
       </div>
-      <div class="signo">
-        <i class="fa fa-usd"></i>
-      </div>
-      <div class="info">
-        <p>{{ datos_bancarios }}</p>
-      </div>
     </div>
+    <fieldset class="info">
+      <legend class="signo">
+        <i class="fa fa-usd"></i>
+      </legend>
+      <p>Fundación Inclusión TEA</p>
+      <p>Banco Estado</p>
+      <p>Chequera Electrónica</p>
+      <p>26-9701-65541</p>
+    </fieldset>
   </div>
 </div>

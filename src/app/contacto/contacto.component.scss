@@ -12,7 +12,7 @@
     flex-basis: 33.33%;
   }
 
-  div.telefono:before{
+  div.telefono:before {
     content: "";
     padding: 45px;
     background: $blue;
@@ -52,7 +52,7 @@
     flex-basis: 33.33%;
   }
 
-  div.signo:before {
+  .signo:before {
     content: "";
     padding: 45px;
     background: $pink;
@@ -63,8 +63,20 @@
     margin: 25px 21px;
   }
 
-  .signo {
-    flex-basis: 15%;
+  fieldset {
+    border: 2px solid gray;
+    margin: 0% auto 5% auto;
+    max-width: 50%;
+
+    legend {
+      margin: 0 auto !important;
+      text-align: center;
+      width: 30%;
+    }
+
+    p {
+      margin: 1% auto 1% 25%;
+    }
   }
 
   .info {
@@ -92,5 +104,47 @@
   .fa-usd {
     padding: 45px 53px;
     color: $background;
+  }
+
+  .iconos {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .deposito {
+    margin-top: 35px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .iconos {
+    display: list-item !important;
+    list-style: none;
+    text-align: center;
+    margin: 35px auto;
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .intro {
+    text-align: justify;
+  }
+
+  fieldset {
+    border: 2px solid gray;
+    margin: 0% auto 5% auto;
+    max-width: 100% !important;
+
+    legend {
+      margin: 0 auto !important;
+      text-align: center;
+      width: 50% !important;
+    }
+
+    p {
+      margin: 1% auto 1% 18% !important;
+    }
   }
 }

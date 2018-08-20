@@ -10,7 +10,7 @@
   .container div.telefono:before {
     content: "";
     padding: 45px;
-    background: #e4235d;
+    background: #1bbcdc;
     position: absolute;
     border-radius: 80px;
     color: #F0F0F0;
@@ -19,7 +19,7 @@
   .container div.mail:before {
     content: "";
     padding: 45px;
-    background: #1bbcdc;
+    background: #f09700;
     position: absolute;
     border-radius: 80px;
     color: #F0F0F0;
@@ -32,7 +32,7 @@
   .container div.direccion:before {
     content: "";
     padding: 45px;
-    background: #8a5b90;
+    background: #6a2668;
     position: absolute;
     border-radius: 80px;
     color: #F0F0F0;
@@ -42,19 +42,25 @@
     -webkit-flex-basis: 33.33%;
     -ms-flex-preferred-size: 33.33%;
     flex-basis: 33.33%; }
-  .container div.signo:before {
+  .container .signo:before {
     content: "";
     padding: 45px;
-    background: #f09700;
+    background: #e4235d;
     position: absolute;
     border-radius: 80px;
     color: #F0F0F0;
     z-index: -1;
     margin: 25px 21px; }
-  .container .signo {
-    -webkit-flex-basis: 15%;
-    -ms-flex-preferred-size: 15%;
-    flex-basis: 15%; }
+  .container fieldset {
+    border: 2px solid gray;
+    margin: 0% auto 5% auto;
+    max-width: 50%; }
+    .container fieldset legend {
+      margin: 0 auto !important;
+      text-align: center;
+      width: 30%; }
+    .container fieldset p {
+      margin: 1% auto 1% 25%; }
   .container .info {
     font-size: 24px; }
   .container i {
@@ -70,3 +76,36 @@
   .container .fa-usd {
     padding: 45px 53px;
     color: #F0F0F0; }
+  .container .iconos {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center; }
+  .container .deposito {
+    margin-top: 35px; }
+
+@media all and (max-width: 480px) {
+  .iconos {
+    display: list-item !important;
+    list-style: none;
+    text-align: center;
+    margin: 35px auto; }
+    .iconos p {
+      font-size: 24px; }
+  .intro {
+    text-align: justify; }
+  fieldset {
+    border: 2px solid gray;
+    margin: 0% auto 5% auto;
+    max-width: 100% !important; }
+    fieldset legend {
+      margin: 0 auto !important;
+      text-align: center;
+      width: 50% !important; }
+    fieldset p {
+      margin: 1% auto 1% 18% !important; } }
