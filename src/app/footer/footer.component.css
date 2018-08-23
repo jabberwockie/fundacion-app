@@ -1,11 +1,16 @@
 .footer {
-  background-color: #f09700; }
+  background-color: #6a762e;
+  color: #F0F0F0;
+  bottom: 0;
+  min-width: 100%;
+  padding: 15px 0; }
   .footer .contenedor {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 15px 0;
     -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly; }
     .footer .contenedor .list {
@@ -13,10 +18,15 @@
       padding-left: 0; }
   .footer a {
     text-decoration: none;
-    color: #000; }
+    color: #F0F0F0; }
   .footer li {
     display: block;
     list-style: none; }
   .footer img {
     max-height: 180px;
     width: auto; }
+
+@media all and (max-width: 480px) {
+  .imagen,
+  .contacto {
+    display: none; } }

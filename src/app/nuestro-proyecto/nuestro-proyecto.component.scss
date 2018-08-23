@@ -2,7 +2,9 @@
 
 .container {
   .contenido {
+    display: flex;
     margin-top: 50px;
+    margin-bottom: 35px;
   }
 
   .np-titulo {
@@ -13,9 +15,6 @@
   hr {
     margin-bottom: 30px;
   }
-  .d-flex {
-    margin-bottom: 35px;
-  }
 
   p {
     text-align: justify;
@@ -25,5 +24,27 @@
 
   img {
     margin: auto 20px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .container {
+    .contenido {
+      display: block !important;
+      .texto h3 {
+        margin-top: 30px;
+      }
+      .texto p {
+        text-align: justify;
+        margin: 10px 10px 20px !important;
+      }
+    }
+
+    img {
+      margin: 0 auto !important;
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
   }
 }

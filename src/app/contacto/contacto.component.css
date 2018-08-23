@@ -60,7 +60,11 @@
       text-align: center;
       width: 30%; }
     .container fieldset p {
-      margin: 1% auto 1% 25%; }
+      text-align: center;
+      font-weight: bold;
+      line-height: normal; }
+    .container fieldset p:nth-child(4n+5) {
+      margin-bottom: 8%; }
   .container .info {
     font-size: 24px; }
   .container i {
@@ -106,6 +110,4 @@
     fieldset legend {
       margin: 0 auto !important;
       text-align: center;
-      width: 50% !important; }
-    fieldset p {
-      margin: 1% auto 1% 18% !important; } }
+      width: 50% !important; } }

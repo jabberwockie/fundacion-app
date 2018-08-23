@@ -1,17 +1,30 @@
-nav {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -ms-flex: border-box;
-  flex: border-box;
-  line-height: 0; }
-  nav .email {
-    line-height: 0; }
-  nav p {
+.nav {
+  background-color: #F0F0F0; }
+  .nav .contacto {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    margin-top: 2%; }
+  .nav .contacto .email {
+    line-height: 0;
+    float: right;
+    margin-top: 3%; }
+  .nav .contacto .telefono {
+    line-height: 0;
+    float: right;
+    margin-right: 20px;
+    margin-top: 3%; }
+  .nav p {
     color: #A0A0A0; }
-  nav img {
+  .nav img {
     max-height: 100px;
     width: auto; }
+
+@media all and (max-width: 480px) {
+  .email {
+    float: left !important; }
+  .telefono {
+    float: left !important; }
+  .navbar-brand {
+    position: relative !important;
+    left: 38% !important; } }

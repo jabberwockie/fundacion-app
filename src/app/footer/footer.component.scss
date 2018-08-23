@@ -31,3 +31,11 @@
     width: auto;
   }
 }
+
+@media all and (max-width: 480px) {
+  .imagen,
+  .contacto{
+    display: none;
+  }
+}
+

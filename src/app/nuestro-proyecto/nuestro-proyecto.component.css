@@ -1,5 +1,10 @@
 .container .contenido {
-  margin-top: 50px; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 35px; }
 
 .container .np-titulo {
   text-align: center;
@@ -8,13 +13,9 @@
 .container hr {
   margin-bottom: 30px; }
 
-.container .d-flex {
-  margin-bottom: 35px; }
-
-.container .texto {
-  margin: 0 10px auto 20px; }
-  .container .texto p {
-    text-align: justify; }
+.container p {
+  text-align: justify;
+  margin: auto 10px auto 20px; }
 
 .container img {
   margin: auto 20px; }
@@ -22,11 +23,11 @@
 @media all and (max-width: 480px) {
   .container .contenido {
     display: block !important; }
-    .container .contenido .texto {
-      margin: 0; }
+    .container .contenido .texto h3 {
+      margin-top: 30px; }
     .container .contenido .texto p {
       text-align: justify;
-      margin: 30px 10px 20px !important; }
+      margin: 10px 10px 20px !important; }
   .container img {
     margin: 0 auto !important;
     width: 100%;
