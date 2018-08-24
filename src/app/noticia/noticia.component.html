@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="container" *ngFor="let noticia of noticias">
+    <h1 class="titulo">{{ noticia.titulo }}</h1>
+    <hr>
+    <div class="d-flex contenido">
+      <img src="{{ noticia.imagen_completo }}" alt="">
+      <div class="texto">
+
+        <p>
+          {{ noticia.texto_completo }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
