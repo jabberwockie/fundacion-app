@@ -12,3 +12,9 @@
     background-color: #1495ac;
   }
 }
+
+@media all and (max-width: 480px) {
+  .card {
+    margin: 10px 0;
+  }
+}
