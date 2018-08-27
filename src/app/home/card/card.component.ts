@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {NoticiaService} from '../../noticia/noticia.service';
+import {Input} from '@angular/core';
+import {Noticia} from '../../noticia/noticia.model';
 
 @Component({
   selector: 'app-card',
@@ -8,16 +10,18 @@ import {NoticiaService} from '../../noticia/noticia.service';
 })
 
 export class CardComponent implements OnInit {
-  // cards = [{titulo: 'titulo 1', texto_resumen: 'Texto tarjeta 1', imagen_resumen:'https://picsum.photos/350/200'},
-  //   {titulo: 'titulo 2', texto_resumen: 'Texto tarjeta 2', imagen_resumen:'https://picsum.photos/350/200'},
-  //   {titulo: 'titulo 3', texto_resumen: 'Texto tarjeta 3', imagen_resumen:'https://picsum.photos/350/200'}];
+  @Input() noticias: Noticia;
+  selectedNoticia: Noticia;
 
-  constructor(private noticiaServ: NoticiaService) { }
+  cards = this.noticiaServ.noticiasArray;
 
-  ngOnInit() {
+  constructor(private noticiaServ: NoticiaService) {
   }
 
- cards = this.noticiaServ.resumen;
-
+  ngOnInit() {
+    this.noticiaServ.noticiaSelected.subscribe(
+      (noticia: Noticia) => {this.selectedNoticia = noticia;}
+    );
+  }
 
 }

@@ -31,6 +31,7 @@ const appRoutes: Routes = [
   {path: 'vision', component: VisionComponent},
   {path: 'nuestro-proyecto', component: NuestroProyectoComponent},
   {path: 'contacto', component: ContactoComponent},
+  {path: 'noticia/:id', component: NoticiaComponent},
   {path: '**', component: PageNotFoundComponent}
 
 ];

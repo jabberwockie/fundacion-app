@@ -1,0 +1,6 @@
+.contenido .imagen {
+  margin: 25px auto;
+  max-width: 70%; }
+
+.contenido .texto {
+  text-align: justify; }
