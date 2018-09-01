@@ -28,6 +28,7 @@ export class NoticiaService {
   }
 
   getNoticia(id: string) {
+    // @ts-ignore
     return this.noticiasArray[id-1];
   }
 
