@@ -23,6 +23,7 @@ import {ContactoComponent} from './contacto/contacto.component';
 import {NoticiaComponent} from './noticia/noticia.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {NoticiaService} from './noticia/noticia.service';
+import {PersonalService} from './quienes-somos/sobre-nosotros/personal.service';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -64,7 +65,7 @@ const appRoutes: Routes = [
     NgbModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [NoticiaService],
+  providers: [NoticiaService, PersonalService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

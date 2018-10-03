@@ -4,3 +4,13 @@
 
 .contenido .texto {
   text-align: justify; }
+
+.atras {
+  margin-top: 20px;
+  background: #1bbcdc;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold; }
+
+button:hover {
+  background-color: #13839a; }

@@ -1,0 +1,25 @@
+.container {
+  font-family: 'Roboto', sans-serif;
+  .titulo {
+    display: inline-block;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  h4 {
+    margin: 0 10px 0 0;
+    display: inline-block;
+  }
+
+  h5 {
+    margin: 0;
+    padding: 0;
+  }
+
+  p{
+    margin-top: 25px;
+  }
+}
