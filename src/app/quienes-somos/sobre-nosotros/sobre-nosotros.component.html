@@ -1,13 +1,15 @@
 <div class="row">
   <div class="container">
     <div class="personal" *ngFor="let persona of personal">
-      <div class="imagen">
+      <div class="imagenes">
         <img [src]=persona.foto alt="Imagen personal">
       </div>
       <div class="texto">
         <h2>{{persona.nombre}} {{persona.apellido}}</h2>
-        <h4>{{persona.cargo}}</h4>
-        <h5 class="titulo">({{persona.titulo}}, {{persona.universidad}})</h5>
+        <div class="sub-titulo">
+          <h5>{{persona.cargo}}</h5>
+          <h5 class="titulo">({{persona.titulo}}, {{persona.universidad}})</h5>
+        </div>
         <p>{{persona.descripcion}}</p>
       </div>
       <hr>
