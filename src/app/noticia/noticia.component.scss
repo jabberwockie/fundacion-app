@@ -2,8 +2,7 @@
 
 .contenido {
   .imagen {
-    margin: 25px auto;
-    max-width: 70%;
+    text-align: center;
   }
   .texto {
     text-align: justify;
@@ -23,3 +22,30 @@ button:hover{
   background-color: #13839a;
 }
 
+@media all and (max-width: 480px) {
+  .container {
+
+    .imagen {
+      text-align: center;
+      img {
+        margin: 0 auto !important;
+        max-width: -webkit-fill-available;
+        height: auto;
+        position: relative;
+      }
+    }
+
+    .texto {
+      margin: 25px 0 0;
+    }
+
+    .atras {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .boton {
+      text-align: center;
+    }
+  }
+}
