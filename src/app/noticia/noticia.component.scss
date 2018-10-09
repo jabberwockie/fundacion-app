@@ -6,8 +6,13 @@
   }
   .texto {
     text-align: justify;
+    margin-top: 30px;
   }
 
+}
+
+.boton {
+  margin-bottom: 20px;
 }
 
 .atras {
@@ -18,7 +23,7 @@
   font-weight: bold;
 }
 
-button:hover{
+button:hover {
   background-color: #13839a;
 }
 

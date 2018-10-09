@@ -8,7 +8,8 @@ import {PersonalService} from './personal.service';
 })
 export class SobreNosotrosComponent implements OnInit {
   personal = this.personalServ.personalArray;
-
+  titulo = 'Sobre Nosotros';
+  
   constructor(private personalServ: PersonalService) {
   }
 

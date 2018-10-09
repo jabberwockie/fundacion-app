@@ -73,3 +73,10 @@ ngb-carousel {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+
+@media all and (max-width: 480px){
+  .carousel-item.active.image img {
+    max-width: -webkit-fill-available !important;
+    height: auto;
+  }
+}
