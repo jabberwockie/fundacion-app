@@ -7,7 +7,7 @@
     margin: 50px auto;
 
     .texto {
-      margin: auto 25px;
+      margin: auto 25px auto 40px;
       text-align: justify;
     }
   }
@@ -32,6 +32,8 @@
     -webkit-border-radius: 200px;
     -moz-border-radius: 200px;
     border-radius: 200px;
+    max-width: 315px;
+    height: auto;
   }
 
   h2 {
