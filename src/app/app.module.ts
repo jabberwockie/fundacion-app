@@ -27,6 +27,7 @@ import {PersonalService} from './quienes-somos/sobre-nosotros/personal.service';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
+  {path: '/', component: HomeComponent},
   {path: 'sobre-nosotros', component: SobreNosotrosComponent},
   {path: 'mision', component: MisionComponent},
   {path: 'vision', component: VisionComponent},
@@ -34,9 +35,7 @@ const appRoutes: Routes = [
   {path: 'contacto', component: ContactoComponent},
   {path: 'noticia/:id', component: NoticiaComponent},
   {path: '**', component: PageNotFoundComponent}
-
 ];
-
 
 @NgModule({
   declarations: [
