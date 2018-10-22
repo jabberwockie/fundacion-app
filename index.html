@@ -3,8 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>Fundación Inclusión TEA</title>
-  <base href="https://jabberwockie.github.io/fundacion-app/">
+  <base href="https://jabberwockie.github.com/fundacion-app">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
 <link rel="stylesheet" href="styles.7f027d51a823ea72b3bb.css"></head>
 <body>
   <app-root></app-root>
