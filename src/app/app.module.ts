@@ -26,15 +26,15 @@ import {NoticiaService} from './noticia/noticia.service';
 import {PersonalService} from './quienes-somos/sobre-nosotros/personal.service';
 
 const appRoutes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: '/', component: HomeComponent},
-  {path: 'sobre-nosotros', component: SobreNosotrosComponent},
-  {path: 'mision', component: MisionComponent},
-  {path: 'vision', component: VisionComponent},
-  {path: 'nuestro-proyecto', component: NuestroProyectoComponent},
-  {path: 'contacto', component: ContactoComponent},
-  {path: 'noticia/:id', component: NoticiaComponent},
-  {path: '**', component: PageNotFoundComponent}
+  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
+  { path: 'inicio', component: HomeComponent },
+  { path: 'sobre-nosotros', component: SobreNosotrosComponent },
+  { path: 'mision', component: MisionComponent },
+  { path: 'vision', component: VisionComponent },
+  { path: 'nuestro-proyecto', component: NuestroProyectoComponent },
+  { path: 'contacto', component: ContactoComponent },
+  { path: 'noticia/:id', component: NoticiaComponent },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
