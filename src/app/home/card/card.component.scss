@@ -3,6 +3,7 @@
 .card {
   margin: auto 10px;
   align-content: space-evenly;
+  max-width: 350px;
   .btn {
     background-color: $blue;
     color: $background;
@@ -10,6 +11,10 @@
   }
   .btn:hover {
     background-color: #1495ac;
+  }
+  img.card-img-top {
+    max-height: 250px;
+    width: auto;
   }
 }
 
