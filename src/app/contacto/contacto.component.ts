@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ContactoComponent implements OnInit {
   titulo = '¡Hablemos!';
   mail = 'fundacioninclusiontea@gmail.com';
-  fono = '+56 9 6540 2598';
-  direccion = 'Una Dirección #123';
+  fono = '+562 3247 - 4697';
+  direccion = 'El Maitén #0237, Puente Alto';
   intro = 'Queremos que seas parte de nuestro proyecto y que juntos hagamos realidad la inclusión. ¡Ayúdanos a seguir adelante!';
   sub_titulo = 'Ayuda nuestra causa';
 

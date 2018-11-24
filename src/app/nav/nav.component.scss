@@ -3,6 +3,13 @@
 .nav {
   background-color: $background;
 
+  h2 {
+    display: inline-block;
+    vertical-align: middle;
+    color: #212529bf;
+    max-width: 30%;
+  }
+
   .contacto {
     display: inline-block;
     float: right;

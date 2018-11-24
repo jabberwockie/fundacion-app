@@ -8,11 +8,12 @@ import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
 })
 
 export class CarouselComponent implements OnInit {
-  images: Array<string> = ['https://picsum.photos/1200/300?image=10', 'https://picsum.photos/1200/300?image=30',
-    'https://picsum.photos/1200/300?image=51'];
-  title: Array<string> = ['First Slide', 'Second Slide', 'Third Slide'];
-  texts: Array<string> = ['Nulla vitae elit libero, a pharetra augue mollis interdum.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'Praesent commodo cursus magna, vel scelerisque nisl consectetur.'];
+  images: Array<string> = ['../../assets/banner_4.jpeg', '../../assets/banner_2.jpeg',
+    '../../assets/banner_5.jpeg'];
+  title: Array<string> = ['Terapia Personalizada', 'Sesiones Multidisciplinarias', '¡Al Aire Libre!'];
+  texts: Array<string> = ['Cada niño es único y nosotros le damos terapia de acuerdo a sus necesidades',
+    'Fonoaudiología - Terapia Ocupacional - Ed. Parvularia',
+    'Por que siempre es rico disfrutar de la naturaleza y las áreas verdes como parte de la terapia'];
 
   constructor(config: NgbCarouselConfig) {
     // customize default values of carousels used by this component tree

@@ -3,6 +3,10 @@
 .contenido {
   .imagen {
     text-align: center;
+    img {
+      max-height: 400px;
+      width: auto;
+    }
   }
   .texto {
     text-align: justify;
